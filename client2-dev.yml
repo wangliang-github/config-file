@@ -6,6 +6,9 @@ server:
 spring:
   application:
     name: client2
+    
+str:
+  s1: 123456
 
 eureka:
   client:
