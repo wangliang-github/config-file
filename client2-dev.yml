@@ -6,6 +6,8 @@ server:
 spring:
   application:
     name: client2
+  s:
+    ss: 123456
 
 
 eureka:
@@ -13,8 +15,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
  
-s:
-  ss: 123456
+
 
 
 
