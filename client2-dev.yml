@@ -1,19 +1,18 @@
+#端口号 路径 写在配置中心
 server:
   port: 8763
   servlet:
     context-path: /cloud
 
-spring:
-  application:
-    name: client2
-    sss: 123456
-
-
+#注册中心写在配置中心  注册中心有可能修改
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-      
+#数据库配置 以及其他一些配置信息
+sec:
+  aes:
+    key: 123456
  
 
 
