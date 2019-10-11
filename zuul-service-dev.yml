@@ -1,0 +1,23 @@
+
+server:
+  port: 8767
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#数据库配置 以及其他一些配置信息
+sec:
+  aes:
+    key: 123456
+ 
+zuul:
+  routes:
+    api-b:
+      path: /api-a/**
+      serviceId: service-feign
+
+
+
+
+
